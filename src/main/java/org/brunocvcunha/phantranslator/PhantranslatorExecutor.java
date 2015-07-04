@@ -156,7 +156,17 @@ public class PhantranslatorExecutor {
 
 	protected void destroy() {
 		if (hasDriver()) {
-			getDriver().close();
+			try {
+				getDriver().close();
+			} catch(Exception e) {
+			}
+			
+			try {
+				getDriver().quit();
+			} catch(Exception e) {
+			}
+			
+			
 		}
 	}
 

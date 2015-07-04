@@ -1,3 +1,2 @@
 language: java
 install: mvn clean install -DskipTests=true
-test: mvn dependency:list
