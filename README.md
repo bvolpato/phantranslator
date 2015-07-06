@@ -5,7 +5,7 @@ Simple PhantomJS Google Translator Implementation (Selenium based)
 [![Apache License](http://img.shields.io/badge/license-ASL-blue.svg)](https://github.com/brunocvcunha/phantranslator/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/brunocvcunha/phantranslator.svg)](https://travis-ci.org/brunocvcunha/phantranslator)
 
-Requires [PhantomJS](http://phantomjs.org) installed and exposed in 'PATH' variable.
+Requires [PhantomJS](http://phantomjs.org) installed and exposed in `PATH` variable.
 
 Download
 --------
