@@ -1,10 +1,6 @@
 package org.brunocvcunha.phantranslator;
 
-import java.io.IOException;
-import java.util.concurrent.TimeUnit;
-
 import org.apache.log4j.Logger;
-import org.brunocunha.inutils4j.MyStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriverService;
