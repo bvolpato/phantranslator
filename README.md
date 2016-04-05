@@ -4,6 +4,7 @@ phantranslator
 
 [![Apache License](http://img.shields.io/badge/license-ASL-blue.svg)](https://github.com/brunocvcunha/phantranslator/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/brunocvcunha/phantranslator.svg)](https://travis-ci.org/brunocvcunha/phantranslator)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.brunocvcunha.phantranslator/phantranslator/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.brunocvcunha.phantranslator/phantranslator)
 
 Requires [PhantomJS](http://phantomjs.org) installed and exposed in `PATH` variable.
 
