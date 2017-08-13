@@ -15,14 +15,16 @@
  */
 package org.brunocvcunha.phantranslator;
 
+import com.thoughtworks.selenium.webdriven.WebDriverBackedSelenium;
+
+import java.io.File;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
-
-import com.thoughtworks.selenium.webdriven.WebDriverBackedSelenium;
 
 /**
  * PhantomJS Google Translator Client
@@ -149,7 +151,11 @@ public class PhantranslatorExecutor {
 							"--ssl-protocol=any", "--ignore-ssl-errors=true",
 							"--webdriver-loglevel=INFO" });
 
-			this._driver = new PhantomJSDriver(caps);
+			PhantomJSDriverService service = new PhantomJSDriverService.Builder()
+			        .usingPort(8080)
+			        .usingPhantomJSExecutable(new File("/usr/local/bin/phantomjs"))
+			        .build();
+			this._driver = new PhantomJSDriver(service, caps);
 		}
 
 		return this._driver;

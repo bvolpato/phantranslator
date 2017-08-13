@@ -16,6 +16,7 @@
 package org.brunocvcunha.phantranslator;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 import java.io.IOException;
 
@@ -48,6 +49,7 @@ public class PhantranslatorTest {
 			} else {
 				log.error("Error running tests", e);
 			}
+			fail("Error! " + e.getMessage());
 		}
 	}
 
